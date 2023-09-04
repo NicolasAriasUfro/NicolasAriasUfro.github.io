@@ -1,0 +1,39 @@
+*{
+    color: #000b54;
+}
+
+body {
+    background: linear-gradient(to bottom right, #ffffff, #c0c5ff);
+}
+
+.card{
+
+
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+row{
+    margin: 0 auto;
+}
+col{
+    margin: 0 auto;
+}
+section{
+    margin:20%;
+    text-align: center;
+}
+#mis\ proyectos{
+    margin: 2%;
+}
+.nav-link {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto de su elemento padre */
+}
+.card{
+    color:inherit;
+}
+.fs-4{
+    font-weight: 600;
+}
