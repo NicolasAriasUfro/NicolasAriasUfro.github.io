@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #dcdcdc, #555555);
+    color: #333;
+    width: 80%;
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    padding: 5px;
+    background-color: #fff; /* Cambia el color de fondo según sea necesario */
+    border-radius: 5px;
+    border: 20px ;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #dcdcdc, #555555);
+    position: relative;
+}
+
+.card-container {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    border: 1px solid transparent; /* Cambiado para que no se superponga con el color de fondo */
+    border-radius: 50%; /* Para hacer un círculo */
+    width: 5px; /* Ancho de la chispa */
+    height: 5px; /* Altura de la chispa */
+    background-color: #ffffff; /* Color de fondo de la estela */
+    box-shadow: 0 5px 20px #001bc5; /* Sombra que agrega efecto de brillo */
+    animation: move-spark 8s infinite linear; /* Aplica la animación */
+}
+
+@keyframes move-spark {
+    0% {
+        top: -10px; /* Inicia arriba de la tarjeta */
+        left: -10px; /* Inicia a la izquierda de la tarjeta */
+    }
+    25% {
+        top: -10px; /* Se mueve hacia la izquierda */
+        left: calc(100% - 10px); /* Se detiene a la derecha de la tarjeta */
+    }
+    50% {
+        top: calc(100% - 10px); /* Se mueve hacia abajo */
+        left: calc(100% - 10px); /* Se detiene abajo de la tarjeta */
+    }
+    75% {
+        top: calc(100% - 10px); /* Se mueve hacia la derecha */
+        left: -10px; /* Se detiene a la izquierda de la tarjeta */
+    }
+    100% {
+        top: -10px; /* Regresa a la posición inicial arriba de la tarjeta */
+        left: -10px; /* Regresa a la posición inicial a la izquierda de la tarjeta */
+    }
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto recorta la imagen para que ocupe todo el contenedor manteniendo su relación de aspecto */
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+card{
+    height: 100%;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+

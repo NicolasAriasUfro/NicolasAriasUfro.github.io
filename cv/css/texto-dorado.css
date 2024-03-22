@@ -1,0 +1,84 @@
+/* Define una clase para el texto dorado */
+.texto-gold {
+    font-weight: bold;
+    color: gold; /* Color dorado */
+    position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+/* Pseudo-elemento para el efecto de barrido del texto dorado */
+.texto-gold::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0;
+    left: 0;
+    width: 10ch;
+    height: 1.5rem;
+    background: linear-gradient(to right, transparent 0%, gold 50%, transparent 100%); /* Gradiente lineal */
+    pointer-events: none; /* No interactuable */
+    z-index: 1; /* Posiciona el barrido detrás del texto */
+    animation: barrido 3s infinite; /* Animación del barrido */
+}
+
+/* Define una clase para el texto plateado */
+.texto-silver {
+    font-weight: bold;
+    color: silver; /* Color plateado */
+    position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+/* Pseudo-elemento para el efecto de barrido del texto plateado */
+.texto-silver::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0;
+    left: 0;
+    width: 10ch;
+    height: 1.5rem;
+    background: linear-gradient(to right, transparent 0%, silver 50%, transparent 100%); /* Gradiente lineal */
+    pointer-events: none; /* No interactuable */
+    z-index: 1; /* Posiciona el barrido detrás del texto */
+    animation: barrido 3s infinite; /* Animación del barrido */
+}
+
+/* Define una clase para el texto cobre */
+.texto-copper {
+    font-weight: bold;
+    color: sienna; /* Color cobre */
+    position: relative; /* Para posicionar el pseudo-elemento */
+
+}
+
+/* Pseudo-elemento para el efecto de barrido del texto cobre */
+.texto-copper::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posicionamiento absoluto */
+    width: 10ch;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    background: linear-gradient(to right, transparent 0%, sienna 50%, transparent 100%); /* Gradiente lineal */
+    pointer-events: none; /* No interactuable */
+    z-index: 1; /* Posiciona el barrido detrás del texto */
+    animation: barrido 3s infinite; /* Animación del barrido */
+}
+
+/* Animación del barrido */
+@keyframes barrido {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
