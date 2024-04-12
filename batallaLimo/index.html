@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Batalla Limo</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+<section>
+    <h2>Personajes</h2>:
+    <br>
+    <div>Personaje 1
+        <img id="knightImage" src="images/knight.png" alt="">
+        <div class="containerBarLife">
+            <div class="barLife" id="barLifeKnight"></div>
+        </div>
+    </div>
+    <div>Personaje 2
+        <img id="lemonImage" src="images/lemon.png" alt="">
+        <div class="containerBarLife">
+            <div class="barLife" id="barLifeLemon"></div>
+        </div>
+    </div>
+
+</section>
+<section id="panel de control">
+    <h2>Panel de Control</h2>
+    <button id="btnIniciarBatalla" onclick="batallaPorDefecto()">Empezar Batalla</button>
+
+</section>
+<section id="registroBatalla">
+    <h2>Registro Batalla</h2>
+</section>
+
+<script src="js/batalla.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+img {
+    max-width: 200px;
+    height: auto;
+}
+#registroBatalla {
+    font-family: "MedievalSharp", sans-serif;
+}
+.barLife {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}
+.containerBarLife {
+    width: 400px;
+    height: 20px;
+    border: 1px solid #000;
+}
